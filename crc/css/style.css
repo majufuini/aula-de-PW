@@ -1,3 +1,12 @@
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    padding: 0;
+}
+
 header {
     display: flex;
     justify-content: center;
@@ -5,10 +14,10 @@ header {
     background-color: black;
     color: white;
     font-family: Arial, Helvetica, sans-serif;
-    width: 100vw;
-    margin-left: 0%;
-    margin-right: 0%;
-    margin-top: 0%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
 }
 
 nav {
@@ -22,6 +31,4 @@ nav {
 
 a {
     color: white;
-
 }
-
