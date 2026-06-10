@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=UnifrakturMaguntia&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Symbols:wght@100..900&display=swap');
+
 html, body {
     margin: 0;
     padding: 0;
@@ -9,9 +12,10 @@ body {
 
 header {
     display: flex;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-between;
     text-align: center;
-    background-color: black;
+    background-color: rgb(157, 4, 4);
     color: white;
     font-family: Arial, Helvetica, sans-serif;
     width: 100%;
@@ -24,11 +28,53 @@ nav {
     display: flex;
     justify-content: center;
     text-align: center;
-    background-color: black;
+    background-color: rgb(157, 4, 4); 
     font-family: Arial, Helvetica, sans-serif;
     color: white;
+    margin-top: 25px;
+    margin: 25px;
+    gap: 20px;
+    height: 4vh;
+    transition: all;
+    width: 60vh;
+
 }
 
 a {
     color: white;
+    text-decoration: none;
+    font-size: medium;
+}
+
+nav :hover {
+    transition: 0.5s;
+    font-size: larger;
+    color: red;
+}
+
+#corpo {
+    padding-top: 70px;
+}
+
+section {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: medium;
+    margin: 5px;
+}
+
+h1 {
+    font-family: "UnifrakturMaguntia", cursive;
+    font-weight: 100;
+    margin: 3vh;
+}
+
+h2 {
+    font-family: "Noto Sans Symbols", sans-serif;
+    margin: 10px;
+    transition: 0.5s;
+}
+
+h2 :hover {
+    color: red;
+    font-size: larger;
 }
