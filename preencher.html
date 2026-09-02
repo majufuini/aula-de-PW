@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        Preenchimento de valores com JavaScript
+    </h1>
+
+    <form>
+        <div class="cursos" id="cursos">
+            <h3>cursos</h3>
+        
+        </div>
+
+        <script>
+            const cursos = ['Desenvolvimento de Software', 'Logística', 'Mecânica', 'Eletrônica'];
+
+            const divCursos = document.getElementById('cursos');
+
+            cursos.forEach((curso) => {
+                const inputRadio = document.createElement('input');
+                inputRadio.setAttribute('type', 'radio');
+                inputRadio.setAttribute('name', 'cursos');
+
+                const label = document.createElement('label');
+                label.innerHTML = curso;
+                const br = document.createElement('br')
+                
+                divCursos.append(inputRadio);
+                divCursos.append(label);
+                divCursos.append(br);
+
+
+            });
+        </script>
+
+
+    </form>
+</body>
+</html>
